@@ -1,0 +1,23 @@
+experiment_name: iris-demo
+
+paths:
+  artifact_dir: artifacts
+  model_path: artifacts/model.joblib
+  latest_ptr: artifacts/LATEST_MODEL.txt
+  test_csv: artifacts/test.csv
+
+training:
+  test_size: 0.2
+  random_state: 42
+  model_type: logistic_regression  # options: logistic_regression | random_forest
+  model_params:
+    max_iter: 200
+    C: 1.0
+    n_estimators: 200  # used if random_forest
+
+mlflow:
+  enabled: true
+  tracking_uri: ./mlruns   # leave as-is for local file store
+  experiment_tags:
+    owner: demo
+    project: mlops-starter

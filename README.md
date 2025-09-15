@@ -1,13 +1,3 @@
-# Hands-On Lab
-
-This lab demonstrates how to integrate Launchable with existing simple Java project. You’ll be able to understand Launchable thorough editing CI configurations and adding a new feature to this project.
-
-# Table of contens
-
-- [Hands-on 1. Setup repository](HANDSON1.md)
-- [Hands-on 2. Introduce Launchable command](HANDSON2.md)
-- [Hands-on 3. Run test with predictive test selection](HANDSON3.md)
-
 # MLOps  Pipeline – Read Me
 
 # Overview:
@@ -36,11 +26,6 @@ uvicorn src.serve:app --host 0.0.0.0 --port 8000 –reload
 curl -X POST http://localhost:8000/predict \
 -H 'Content-Type: application/json' \
 -d '[{"sepal_length":5.1,"sepal_width":3.5,"petal_length":1.4,"petal_width":0.2}]'
-
- 
-<img width="468" height="647" alt="image" src="https://github.com/user-attachments/assets/1d8aa4a3-aca6-4447-a86f-84f4e245e26d" />
-
-
 
 
 
